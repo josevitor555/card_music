@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <main>
+    <audio id="player-audio" src=""></audio>
+    <div class="container-music">
+      <header>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </header>
+      <div class="area-user">
+        <div class="circle-perfil" id="image-user"></div>
+        <span class="name-user">@_sniper_mask</span>
+        <button id="btn">Follow</button>
+      </div>
+      <div class="sub-container">
+        <div class="info-music">
+          <span class="name-music" id="song-name"></span>
+          <span class="name-artist" id="name-artist"></span>
+        </div>
+        <div class="controls">
+          <input type="range" min="0" max="100" value="0" class="slider" id="seek-slider">
+          <div class="timer-container">
+            <span class="current-time">00:00</span>
+            <span class="duration">00:00</span>
+          </div>
+          <div class="icons-control">
+            <i class="fa-solid fa-repeat" id="repeat-icon">
+              <span>no-repeat</span>
+            </i>
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play" id="play-pause"></i>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <script src="unfollow.js"></script>
+  <script src="play_pause.js"></script>
+  <script src="play_music.js"></script>
+  <script src="repeat_icon.js"></script>
+</body>
+</html>
